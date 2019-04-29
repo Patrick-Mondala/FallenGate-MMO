@@ -1,1 +1,1 @@
-nothing really to read at the moment, will change later
+An MMORPG for Minecraft

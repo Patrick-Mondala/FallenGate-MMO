@@ -24,7 +24,7 @@ public class PlayerOnJoinSetup implements Listener {
 		OnlinePlayersStats.addPlayer(player, player_stats);
 		
 		 /*
-		  * if new player add to player data table with uuid, name
+		  * if new player add to player data table with uuid, name, and rank
 		  * prompt them with character selection then add all their stats INCLUDING currency to PlayerStatsObj in OnlinePlayersStats class
 		  * if existing toon use FallenGateMySQLConnection class to set PlayerStatsObj info in OnlinePlayersStats class to match player's 
 		  * MySQL toon data table

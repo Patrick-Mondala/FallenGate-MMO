@@ -1,0 +1,23 @@
+Primary stats:
+
+- Strength: melee (crushing, slashing, and piercing) damage and base armor.
+
+classes: Warrior, Paladin, Shadowknight.
+
+- Agility: atkspeed/movementspeed & evasion (dodge + block chance)
+
+classes: Rogue.
+
+- Intelligence: Spell damage, how fast magic spells cast, resists
+
+classes: Wizard, Warlock.
+
+- Dexterity: crit chance/proc chance, concentration, melee skillups
+
+classes: Ranger
+
+- Spirit: mana regen per sec, healing % increased. 
+classes: Shaman, Druid.
+
+- Wisdom: increases mana by 2 points, lower mana cost per spell, fizzle chance lowered
+classes: Cleric

@@ -10,6 +10,10 @@ public class StatObj {
 		this.modifier = modifier;
 	}
 	
+	public void modify(int new_modifier) {
+		this.modifier += new_modifier;
+	}
+	
 	public String getName() {
 		return name;
 	}

@@ -17,6 +17,7 @@ public class FallenGateMySQLConnection {
 	 * FallenGateMySQLConnection.updateStatement("sql update statement code as string")
 	 * or use
 	 * FallenGateMySQLConnection.queryStatement("sql query statement code as string")
+	 * followed by FallenGateMySQLConnection.getResults() to see results
 	 * everything else: DO NOT TOUCH!! -gentle :)                                           
 	 */
 	
@@ -59,6 +60,10 @@ public class FallenGateMySQLConnection {
     
     private void queryFinish(ResultSet result) {
     	this.results = result;
+    }
+    
+    public ResultSet getResults() {
+    	return results;
     }
 	
 	public ResultSet queryStatement(String query) {

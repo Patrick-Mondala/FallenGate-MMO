@@ -6,7 +6,7 @@ import org.bukkit.entity.Player;
 
 public class OnlinePlayersStats {
 	
-	//Use this class to hold online player stats and add/modify player stats, & don't forget to remove players @disconnect
+	//Use this class to hold online player stats and add/modify player stats, & don't forget to remove players @disconnect - gentle
 	
 	public static HashMap<Player, PlayerStatsObj> online_players_stats = new HashMap<Player, PlayerStatsObj>();
 	

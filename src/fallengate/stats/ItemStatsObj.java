@@ -2,24 +2,17 @@ package fallengate.stats;
 
 import java.util.HashMap;
 
-import org.bukkit.entity.Player;
-
-public class PlayerStatsObj {
+public class ItemStatsObj {
 	
-	//Must be instantiated @class selected - gentle
-	
-	private Player player;
-	private String player_class;
+	//Used on item creation and holds item stats info - gentle
+		
 	private HashMap<String, StatObj> stats = new HashMap<String, StatObj>();
-	
-	public PlayerStatsObj(Player player) {
-		this.player = player;
+	private String name;
+		
+	public ItemStatsObj(String name) {
+		this.name = name;
 	}
-	
-	public void setPlayerClass(String player_class) {
-		this.player_class = player_class;
-	}
-	
+		
 	public void addStat(String stat, int modifier) {
 		stats.put(stat, new StatObj(stat, modifier));
 	}
@@ -28,20 +21,17 @@ public class PlayerStatsObj {
 		stats.get(stat).modify(modifier);
 	}
 	
+	public String getName() {
+		return name;
+	}
+		
 	public int getExistingStat(String stat) {
 		return stats.get(stat).getModifier();
 	}
-	
-	public Player getPlayer() {
-		return player;
-	}
-
-	public String getPlayerClass() {
-		return player_class;
-	}
-
+		
 	public HashMap<String, StatObj> getStats() {
 		return stats;
 	}
-	
+		
 }
+

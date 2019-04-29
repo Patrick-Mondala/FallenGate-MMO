@@ -2,6 +2,8 @@ package fallengate.stats;
 
 public class StatObj {
 	
+	//used by PlayerStatsObj and ItemStatsObj
+	
 	private String name;
 	private int modifier = 0;
 	

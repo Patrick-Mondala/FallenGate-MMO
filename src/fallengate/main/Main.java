@@ -4,6 +4,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import fallengate.mysql.MySQLInfoGetter;
 import fallengate.mysql.MySQLInitialSetup;
+import fallengate.mysql.playerinfo.PlayerOnJoinSetup;
+import fallengate.stats.ItemEquipDequipListener;
 
 public class Main extends JavaPlugin {
 	
@@ -16,6 +18,8 @@ public class Main extends JavaPlugin {
 		
 		MySQLInitialSetup.setup();
 		MySQLInfoGetter.setup();
+		getServer().getPluginManager().registerEvents(new PlayerOnJoinSetup(), this);
+		getServer().getPluginManager().registerEvents(new ItemEquipDequipListener(), this);
 		System.out.println("it's working! haha!");
 	}
 	

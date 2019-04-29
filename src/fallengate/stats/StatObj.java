@@ -5,11 +5,8 @@ public class StatObj {
 	private String name;
 	private int modifier = 0;
 	
-	public void setName(String name) {
+	public StatObj(String name, int modifier) {
 		this.name = name;
-	}
-	
-	public void setModifier(int modifier) {
 		this.modifier = modifier;
 	}
 	

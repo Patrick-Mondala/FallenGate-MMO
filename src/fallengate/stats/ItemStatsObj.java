@@ -17,16 +17,16 @@ public class ItemStatsObj {
 		stats.put(stat, new StatObj(stat, modifier));
 	}
 	
-	public void modifyExistingStat(String stat, int modifier) {
-		stats.get(stat).modify(modifier);
+	public void modifyVisibleStat(String stat, int modifier) {
+		stats.get(stat).modifyVisibleStat(modifier);
 	}
 	
 	public String getName() {
 		return name;
 	}
 		
-	public int getExistingStat(String stat) {
-		return stats.get(stat).getModifier();
+	public int getVisibleStat(String stat) {
+		return stats.get(stat).getVisibleModifier();
 	}
 		
 	public HashMap<String, StatObj> getStats() {

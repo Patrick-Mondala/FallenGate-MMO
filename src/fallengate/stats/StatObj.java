@@ -13,7 +13,7 @@ public class StatObj {
 		this.visible_modifier = modifier;
 	}
 	
-	public void modify(int new_modifier) {
+	public void modifyVisibleStat(int new_modifier) {
 		this.visible_modifier += new_modifier;
 	}
 	
@@ -21,7 +21,7 @@ public class StatObj {
 		return name;
 	}
 	
-	public int getModifier() {
+	public int getVisibleModifier() {
 		return visible_modifier;
 	}
 }

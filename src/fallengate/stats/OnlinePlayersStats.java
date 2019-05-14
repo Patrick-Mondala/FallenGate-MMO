@@ -23,11 +23,11 @@ public class OnlinePlayersStats {
 	}
 	
 	public static void modifyExistingStat(Player player, String stat, int modifier) {
-		online_players_stats.get(player).modifyExistingStat(stat, modifier);
+		online_players_stats.get(player).modifyVisibleStat(stat, modifier);
 	}
 	
 	public static int getExistingStat(Player player, String stat) {
-		return online_players_stats.get(player).getExistingStat(stat);
+		return online_players_stats.get(player).getVisibleStat(stat);
 	}
 	
 	public static PlayerStatsObj getStats(Player player) {

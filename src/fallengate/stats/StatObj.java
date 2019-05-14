@@ -2,18 +2,19 @@ package fallengate.stats;
 
 public class StatObj {
 	
-	//used by PlayerStatsObj and ItemStatsObj
+	//holds a single stat along with modifier value
+	//instantiated and used in PlayerStatsObj and ItemStatsObj
 	
 	private String name;
-	private int modifier = 0;
+	private int visible_modifier = 0;
 	
 	public StatObj(String name, int modifier) {
 		this.name = name;
-		this.modifier = modifier;
+		this.visible_modifier = modifier;
 	}
 	
 	public void modify(int new_modifier) {
-		this.modifier += new_modifier;
+		this.visible_modifier += new_modifier;
 	}
 	
 	public String getName() {
@@ -21,6 +22,6 @@ public class StatObj {
 	}
 	
 	public int getModifier() {
-		return modifier;
+		return visible_modifier;
 	}
 }

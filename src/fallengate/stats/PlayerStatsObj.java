@@ -6,6 +6,8 @@ import org.bukkit.entity.Player;
 
 public class PlayerStatsObj {
 	
+	//holds stats in stats hashmap
+	//to get stat modifier value use getExistingStat("stat name")
 	//Must be instantiated @class selected - gentle
 	
 	private Player player;

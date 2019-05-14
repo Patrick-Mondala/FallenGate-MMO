@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class ItemStatsObj {
 	
-	//Used on item creation and holds item stats info - gentle
+	//Used @item creation and holds item stats info - gentle
 		
 	private HashMap<String, StatObj> stats = new HashMap<String, StatObj>();
 	private String name;
